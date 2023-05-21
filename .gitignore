@@ -1,8 +1,9 @@
 # Clickhouse system directories
 clickhouse/ch_data
 clickhouse/ch_logs
-*.csv
 
+# src dir (data files)
+src/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

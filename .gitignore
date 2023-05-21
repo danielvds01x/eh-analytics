@@ -1,6 +1,6 @@
 # Clickhouse system directories
-/clickhouse/ch_data
-/clickhouse/ch_logs
+clickhouse/ch_data
+clickhouse/ch_logs
 
 
 # Byte-compiled / optimized / DLL files

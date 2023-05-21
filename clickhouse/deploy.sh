@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Get the clickhouse image
+docker pull clickhouse/clickhouse-server:23.4.2.11-alpine
+
 # Get the directory path of the script
 script_dir=$(dirname "$(realpath "$0")")
 

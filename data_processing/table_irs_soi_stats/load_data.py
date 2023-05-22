@@ -55,7 +55,7 @@ def load_data(file_path):
 if __name__ == "__main__":
     setup_logging()
 
-    irs_soi_stats_data_file = os.path.join(ROOT_DIR, '_src/IRS', '2023-05-19_14.11.58-20zpallnoagi.csv')
+    irs_soi_stats_data_file = os.path.join(ROOT_DIR, '_input/irs', '2023-05-19_14.11.58-20zpallnoagi.csv')
     print(irs_soi_stats_data_file)
 
     load_data(irs_soi_stats_data_file)

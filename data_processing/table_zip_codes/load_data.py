@@ -58,7 +58,7 @@ def load_data(zipcodes_datafile_geojson):
 if __name__ == "__main__":
     setup_logging()
 
-    zipcodes_datafile_geojson = os.path.join(ROOT_DIR, '_src', '2023-05-19_01.58.58-usa_zip_codes_v7.geo.json')
+    zipcodes_datafile_geojson = os.path.join(ROOT_DIR, '_input', '2023-05-19_01.58.58-usa_zip_codes_v7.geo.json')
     print(zipcodes_datafile_geojson)
 
     load_data(zipcodes_datafile_geojson)

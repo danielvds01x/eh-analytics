@@ -1,6 +1,8 @@
 import clickhouse_connect
 import logging
 from helpers import db_access_config as config
+import pandas as pd
+from typing import Union
 
 class ClickHouseOperations:
     def __init__(self, host=None, username=None, password=None):
@@ -34,3 +36,15 @@ class ClickHouseOperations:
         except Exception as e:
             logging.error(f"An error occurred when checking if the table exists: {e}")
             return False
+
+    def query_df(self, query: str) -> Union[pd.DataFrame, None]:
+        """
+        Execute a query on ClickHouse and return the result as a pandas DataFrame.
+
+        Args:
+            query (str): The query to execute.
+
+        Returns:
+            pandas.DataFrame or None: The query result as a DataFrame, or None if an error occurred.
+        """
+        return self.client.query_df(query)

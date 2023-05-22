@@ -3,7 +3,7 @@ iac/clickhouse/ch_data
 iac/clickhouse/ch_logs
 
 # src dir (data files)
-data_processing/**/*.json
+data_processing/**/*json
 data_processing/**/*.csv
 data_processing/**/*.pdf
 

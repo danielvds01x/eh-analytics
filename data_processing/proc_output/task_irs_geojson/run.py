@@ -3,10 +3,12 @@ import json
 import os
 import sys
 current_dir = os.path.dirname(os.path.abspath(__file__))  # Get the current script's directory
-parent_dir = os.path.dirname(current_dir)  # Get the parent directory
+parent_dir = os.path.dirname(os.path.dirname(current_dir))  # Get the parent directory
 sys.path.insert(0, parent_dir)  # Add the parent directory to the beginning of the system path
 
+from config.definitions import ROOT_DIR
 from helpers.clickhouse_operations import ClickHouseOperations
+
 
 # read in the input CSV file to a Pandas DataFrame
 # df = pd.read_csv('input_data.csv')
@@ -59,5 +61,6 @@ geojson_dict = {
 }
 
 # output the GeoJSON to a file
-with open('output_geojson.geojson', 'w') as f:
+file = os.path.join(ROOT_DIR, 'src_output', 'output_geojson.json')
+with open(file, 'w') as f:
     json.dump(geojson_dict, f)

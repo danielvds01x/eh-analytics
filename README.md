@@ -53,6 +53,7 @@ During the project, the following challenges were encountered:
 - Defining a network using Docker to facilitate communication between Kibana and Elasticsearch services.
 - Implementing data persistence in ClickHouse due to the need for persistent data storage while running services through Docker containers.
 - Working with libraries like pandas to process semi-structured data and GeoJSON files.
+- Renaming over 150 IRS table fields with more descriptive and user-friendly names to enhance data accessibility and improve understanding. This involves mapping and transforming existing field names into more intuitive labels, facilitating seamless data exploration and analysis.
 
 ## Next Steps
 Based on the project's current state, the suggested next steps for further development are as follows:

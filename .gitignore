@@ -3,7 +3,7 @@ clickhouse/ch_data
 clickhouse/ch_logs
 
 # src dir (data files)
-_src/*
+load_data/_src/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
